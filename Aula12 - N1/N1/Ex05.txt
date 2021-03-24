@@ -1,0 +1,10 @@
+5)
+a) O comando inicial do laço for é o "(int i = 0;"
+
+b) A condição é "i < quantos;"
+
+c) O comando de loop é o “i++”
+
+d)
+Primeira condição: Enquanto i < que quantos ( i < quantos )
+Segunda condição: Enquanto o tamanho do Array sequência for maior que 0 ( sequencia.length() > 0 )

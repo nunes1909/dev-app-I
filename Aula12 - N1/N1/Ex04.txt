@@ -1,0 +1,11 @@
+4)
+
+a) Descreva qual parte do código está definindo enquanto a condição for verdadeira?
+- A parte "(vsal[(cont-1)] != -1)" é a parte do código que define enquanto a condição "enquanto for verdadeira"
+
+b) Qual a parte do código é responsável por executar as instruções?
+- A parte do código responsável por executar as ações do código é:
+ 
+System.out.println("Entre com o valor de salarios:" +1);
+vsal[cont] = new Scanner(System.in).nextDouble();
+cont = cont+1;

@@ -1,0 +1,22 @@
+a) Quais são os atributos do código?
+double marca;
+int numero;
+private String nome;
+
+
+b) Qual o tipo de visibilidade destes atributos?
+String nome ->  é privado.
+int numero -> é usado como parametro então fica comom privado.
+double marca -> é usado como parametro então fica comom privado.
+
+
+c) Que tipo de dado o método construtor está retornando?
+Retorna um array com 10 indices.
+
+
+d) Quais os métodos acessores do código?
+Os getters and setters (get e set) do atributo nome e do array marcas.
+
+
+e) Que tipo de método encontramos no código que não faz parte dos acessores?
+O "public void" para armazenar a marca, tendo como parametro double marca e int numero.

@@ -1,0 +1,27 @@
+7)
+
+a)
+“public” é o modificador de acesso do método e ele declara que o método pode ser acessado de qualquer lugar
+O “int” é o tipo definido no método
+O “getValor()” é o método acessor “get” do atributo valor
+O “return valor;” diz que o método deve retornar o atributo valor já definido
+
+b)
+O “public” é o modificador de acesso do método e ele declara que o método pode ser acessado de qualquer lugar
+O “Void” diz que o método não tem retorno
+O “setValor()” é o método acessor “set” do atributo valor
+O “(int valor)” diz onde vai ser armazenado o dado digitado pelo usuário
+O “this.valor = valor;” diz que o valor digitado pelo usuário deve ser armazenado no atributo “valor”
+
+c)
+“public” é o modificador de acesso do método e ele declara que o método pode ser acessado de qualquer lugar
+O "Numero" é o nome da classe
+O “(int valor)” diz onde vai ser armazenado o dado digitado pelo usuário
+O “this.valor = valor;” diz que o valor digitado pelo usuário deve ser armazenado no atributo “valor”
+
+d)
+O “public” é o modificador de acesso do método e ele declara que o método pode ser acessado de qualquer lugar
+O “String” é o tipo de dado definido no método acessor
+O “getNome()” é o método acessor “get” do atributo Nome
+O “return nome;” diz que o método deve retornar o atributo nome já definido
+
