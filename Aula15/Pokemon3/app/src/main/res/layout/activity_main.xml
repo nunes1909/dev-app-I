@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo33"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:paddingLeft="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#B5B5B5"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Pokémon Club"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nome de Usuário"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtEU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Esqueceu seu usuário?"
+            android:textAlignment="viewEnd"
+            android:textColor="#070707" />
+
+        <EditText
+            android:id="@+id/txtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Sua senha"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="Esqueceu sua senha?"
+            android:textAlignment="viewEnd"
+            android:textColor="#070707" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#B5B5B5"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#774040"
+            android:text="Entrar"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#774040"
+            android:text="Registrar"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
