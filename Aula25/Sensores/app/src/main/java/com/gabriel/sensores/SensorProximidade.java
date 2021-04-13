@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class SensorProximidade extends AppCompatActivity implements SensorEventListener {
     private TextView resultado;
-    private Button btnVoltar, btnLuminosidade;
+    private Button btnVoltar, btnLum;
     private Sensor proximidade;
     private SensorManager medir;
 
@@ -23,16 +23,17 @@ public class SensorProximidade extends AppCompatActivity implements SensorEventL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensor_proximidade);
 
+        btnVoltar = findViewById(R.id.btnVoltar);
+        btnLum = findViewById(R.id.btnLum);
+
         medir = (SensorManager) this.getSystemService(SENSOR_SERVICE);
         proximidade = medir.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         resultado = findViewById(R.id.resultado);
-        btnVoltar = findViewById(R.id.btnVoltar);
-        btnLuminosidade = findViewById(R.id.btnLuminosidade);
 
-        btnLuminosidade.setOnClickListener(new View.OnClickListener() {
+        btnLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirLuminosidade();
+                abrirLum();
             }
         });
 
@@ -42,6 +43,16 @@ public class SensorProximidade extends AppCompatActivity implements SensorEventL
                 voltarInicio();
             }
         });
+    }
+
+    public void abrirLum() {
+        Intent janela = new Intent(this, SensorLuminosidade.class);
+        startActivity(janela);
+    }
+
+    public void voltarInicio() {
+        Intent janela = new Intent(this, MainActivity.class);
+        startActivity(janela);
     }
 
     @Override
@@ -60,13 +71,5 @@ public class SensorProximidade extends AppCompatActivity implements SensorEventL
 
     }
 
-    public void abrirLuminosidade(){
-        Intent janelaLum = new Intent(this, SensorLuminosidade.class);
-        startActivity(janelaLum);
-    }
 
-    public void voltarInicio(){
-        Intent janelaInicio = new Intent(this, MainActivity.class);
-        startActivity(janelaInicio);
-    }
 }

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     SensorManager sensorManager;
-    private Button listar, proximo;
+    private Button listar, proximo, btnLuminosidade;
     private TextView resposta;
 
     @Override
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         listar = findViewById(R.id.listar);
         proximo = findViewById(R.id.proximo);
+        btnLuminosidade = findViewById(R.id.btnLuminosidade);
         resposta = findViewById(R.id.resposta);
 
         listar.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnLuminosidade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirLum();
+            }
+        });
+
         proximo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,5 +59,10 @@ public class MainActivity extends AppCompatActivity {
     public void abrirProximidade(){
         Intent janela = new Intent(this, SensorProximidade.class);
         startActivity(janela);
+    }
+
+    public void abrirLum() {
+        Intent janelaLum = new Intent(this, SensorLuminosidade.class);
+        startActivity(janelaLum);
     }
 }

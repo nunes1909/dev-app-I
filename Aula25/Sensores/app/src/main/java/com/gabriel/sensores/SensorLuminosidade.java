@@ -81,8 +81,8 @@ public class SensorLuminosidade extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-
         sm.unregisterListener(listener,luz);
         super.onPause();
     }
+
 }

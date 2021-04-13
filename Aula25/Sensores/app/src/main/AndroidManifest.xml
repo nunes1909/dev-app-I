@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gabriel.sensores">
-    <uses-feature android:name="android.hardware.sensor.proximity" android:required="true"></uses-feature>
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sensores">
-        <activity android:name=".SensorLuminosidade"></activity>
+        <activity android:name=".SensorManager"></activity>
+        <activity android:name=".SensorLuminosidade" />
         <activity android:name=".SensorProximidade" />
         <activity android:name=".MainActivity">
             <intent-filter>
