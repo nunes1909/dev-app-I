@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".formacao.MainFormacao">
+
+    <Button
+        android:id="@+id/btnVoltarInicio"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/benchnine_light"
+        android:text="Voltar"
+        app:backgroundTint="#C6FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerfil10" />
+
+    <TextView
+        android:id="@+id/tvPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="Técnico em Informática"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivFormacao2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPerfil6"
+        android:layout_width="221dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="Escola Tecnica QI "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivFormacao2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerfil" />
+
+    <TextView
+        android:id="@+id/tvPerfil7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="204dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="Análise e Desenvolvimento"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivFormacao3"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerfil6" />
+
+    <TextView
+        android:id="@+id/tvPerfil9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="De Sistemas"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivFormacao3"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerfil7" />
+
+    <TextView
+        android:id="@+id/tvPerfil10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="Universidade Unopar"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivFormacao3"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerfil9" />
+
+    <ImageView
+        android:id="@+id/ivFormacao2"
+        android:layout_width="115dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qi" />
+
+    <ImageView
+        android:id="@+id/ivFormacao3"
+        android:layout_width="106dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFormacao2"
+        app:srcCompat="@drawable/uno" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
