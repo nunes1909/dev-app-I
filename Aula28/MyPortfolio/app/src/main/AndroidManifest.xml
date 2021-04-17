@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPortfolio">
-        <activity android:name=".formacao.MainFormacao"></activity>
+        <activity android:name=".mains.MainSensores"></activity>
+        <activity android:name=".mains.MainVideo" />
+        <activity android:name=".mains.MainMusic" />
+        <activity android:name=".mains.MainPessoal" />
+        <activity android:name=".mains.MainAtv" />
+        <activity android:name=".mains.MainXp" />
+        <activity android:name=".mains.MainFormacao" />
         <activity android:name=".MainInicio" />
         <activity android:name=".MainActivity">
             <intent-filter>
