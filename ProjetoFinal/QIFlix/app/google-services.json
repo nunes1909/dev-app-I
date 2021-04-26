@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042470368894",
+    "project_id": "qiflix-ab4fe",
+    "storage_bucket": "qiflix-ab4fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042470368894:android:66253310512e7113450a2f",
+        "android_client_info": {
+          "package_name": "com.example.qiflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042470368894-tqr6pai2dcclnshsi4vlc8hblds9a3h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD49-9v4ouRg0gRWm_T_drlXM-kWHIYbQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042470368894-tqr6pai2dcclnshsi4vlc8hblds9a3h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
